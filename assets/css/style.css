@@ -13,34 +13,14 @@ html {
 
 body {
     font-family: var(--nunito) !important;
+    background: black;
 }
 
 .hero {
     overflow: hidden;
-}
-
-.hero-section {
-    background: url("https://img.freepik.com/premium-vector/3d-low-poly-gene-therapy-dna-hud-ui-display-future-polygonal-triangle-point-line-healthy-blue-abstract-medicine-genome-engineering-illustration-future-business-technology_115739-663.jpg?size=626&ext=jpg&ga=GA1.1.79397076.1700657843&semt=ais");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
-    animation: mymove 10s infinite;
-}
-
-@keyframes mymove {
-    25% {
-        background-position: top;
-    }
-
-    50% {
-        background-position: bottom;
-    }
-
-    100% {
-        background-position: top left;
-    }
 
 }
+
 
 .hero-section .row {
     flex-direction: column;
@@ -48,12 +28,14 @@ body {
 
 }
 
+
 .hero-section h1 {
     color: aqua;
     font-weight: bolder;
     position: relative;
     animation-name: example;
     animation-duration: 4s;
+    text-shadow: 0px 0px 10px darkblue, 0 0 20px darkblue, 0 0 40px darkblue, 0px 0px 80px darkblue;
 }
 
 @keyframes example {
@@ -65,19 +47,73 @@ body {
         color: blanchedalmond;
     }
 }
+.rotate  {
+    text-shadow: 0px 0px 10px red, 0px 0px 20px brown, 0px 0px 40px red,0px 0px 60px red;
+}
 
-.hero-section h3 {
-    color: blanchedalmond;
+.rotate span {
+    font-size: 2rem;
+    color: #f8f8f8;
+    display: inline-flex;
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+
+    0%,
+    75% {
+        transform: rotateY(360deg);
+    }
+}
+
+.nine span:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.nine span:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.nine span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.nine span:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+.nine span:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+.nine span:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+
+.nine span:nth-of-type(7) {
+    animation-delay: 1.4s;
+}
+
+.nine span:nth-of-type(8) {
+    animation-delay: 1.6s;
+}
+
+.nine span:nth-of-type(9) {
+    animation-delay: 1.8s;
+}
+
+.nine span:nth-of-type(10) {
+    animation-delay: 2.0s;
 }
 
 .hero-section h4 {
     color: aqua;
-    font-size: 28px;
+    font-size: 35px;
 }
 
 
 .hero-section p {
-    color: aqua;
+    color: burlywood;
     font-size: 28px;
 }
 
@@ -87,7 +123,8 @@ body {
     font-weight: bolder;
     text-transform: uppercase;
     animation-name: hero;
-    animation-duration: 5s; 
+    animation-duration: 5s;
+    text-shadow: 0px 0px 1px coral, 0px 0px 2px coral, 0px 0px 2px coral, 0px 0px 5px coral;
 }
 
 @keyframes hero {
@@ -98,297 +135,235 @@ body {
     100% {
         color: rgb(211, 159, 80);
     }
-} 
+}
 
 
 
-    /* hero section css over */
-    .cheif-name {
-        overflow: hidden;
-    }
-
-    .cheif-name .container {
-        background: url("https://img.freepik.com/premium-photo/3d-rendering-robot-working-with-virtual-display_493806-2380.jpg?size=626&ext=jpg&ga=GA1.1.79397076.1700657843&semt=ais");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        animation: mymove 8s infinite;
-    }
-
-    @keyframes mymove {
-        25% {
-            background-position: right;
-        }
-
-        50% {
-            background-position: center;
-        }
-
-        100% {
-            background-position: top left;
-        }
-
-    }
-
-    .cheif-name h2 {
-        color: aqua;
-    }
-
-    .cheif-name h4 {
-        color: white;
-    }
-
-    .cheif-name p {
-        color: antiquewhite;
-    }
-
-    .cheif-name h4:hover {
-        color: red;
-    }
-
-    /* cheif section css over */
-    .objective {
-        overflow: hidden;
-    }
-
-    .objective .container {
-        background: url("https://img.freepik.com/premium-photo/future-artificial-intelligence-robot-cyborg_31965-6531.jpg?size=626&ext=jpg&ga=GA1.1.79397076.1700657843&semt=ais");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        animation: mymove 8s infinite;
-    }
-
-    @keyframes mymove {
-        25% {
-            background-position: right;
-        }
-
-        50% {
-            background-position: center;
-        }
-
-        100% {
-            background-position: top left;
-        }
-
-    }
-
-    .objective h1 {
-        color: blueviolet;
-        font-weight: bold;
-        text-decoration: underline white;
-    }
-
-    .objective h3 {
-        color: beige;
-        text-align: justify;
-
-    }
-
-    .objective h3:hover {
-        color: burlywood;
-    }
-
-    /* objective section css over */
-    .structure-det {
-        overflow: hidden;
-    }
-
-    .structure-det .container {
-        background: url("https://img.freepik.com/free-vector/technology-digital-data-mesh-network-background_1017-19691.jpg?size=626&ext=jpg&ga=GA1.1.79397076.1700657843&semt=ais");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        animation: mymove 8s infinite;
-    }
-
-    @keyframes mymove {
-        25% {
-            background-position: right;
-        }
-
-        50% {
-            background-position: center;
-        }
-
-        100% {
-            background-position: top left;
-        }
-
-    }
-
-    .structure-det h1 {
-        color: burlywood;
-    }
-
-    .structure-det p {
-        color: aliceblue;
-    }
-
-    .structure-det h3 {
-        color: aliceblue;
-    }
-
-    .structure-det span {
-        color: red;
-        font-size: 26px;
-    }
-
-    .structure-det label {
-        color: red;
-        font-size: 45px;
-    }
-
-    .structure-det a {
-        border: 1px solid black;
-        padding: 7px;
-        background: crimson;
-        text-decoration: underline red;
-        color: azure;
-    }
-
-    .registered h1:hover {
-        color: aqua;
-    }
-
-    .registered a:hover {
-        color: aqua;
-    }
-
-    /* structure  section css over */
-    .coordinators {
-        overflow: hidden;
-    }
-
-    .coordinators .container {
-        background: url("https://img.freepik.com/free-vector/abstract-futuristic-glowing-hologram-background_23-2148189332.jpg?size=626&ext=jpg&ga=GA1.1.79397076.1700657843&semt=ais");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        animation: mymove 8s infinite;
-    }
-
-    @keyframes mymove {
-        25% {
-            background-position: right;
-        }
-
-        50% {
-            background-position: center;
-        }
-
-        100% {
-            background-position: top left;
-        }
-
-    }
-
-    .coordinators h1 {
-        color: aqua;
-    }
-
-    .coordinators h3 {
-        color: aliceblue;
-    }
-
-    .coordinators h3:hover {
-        color: red;
-    }
-
-    .coordinators p {
-        color: burlywood;
-    }
-
-    /* department section over */
-    .department {
-        overflow: hidden;
-    }
-
-    .department .container {
-        background: url(../images/img-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        animation: mymove 8s infinite;
-    }
-
-    @keyframes mymove {
-        25% {
-            background-position: right;
-        }
-
-        50% {
-            background-position: center;
-        }
-
-        100% {
-            background-position: top left;
-        }
-
-    }
-
-    .department h1 {
-        color: aliceblue;
-    }
-
-    .department h1:hover {
-        text-decoration: none;
-    }
-
-    .department h3 {
-        color: cyan;
-    }
-
-    .department p {
-        color: beige;
-    }
-
-    .department li {
-        color: beige;
-    }
-
-    /* .department css over */
-    .institution {
-        overflow: hidden;
-    }
-
-    .institution .container {
-        background: url(../images/img-4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        animation: mymove 8s infinite;
-
-    }
-
-    @keyframes mymove {
-        25% {
-            background-position: right;
-        }
-
-        50% {
-            background-position: center;
-        }
-
-        100% {
-            background-position: top left;
-        }
-
-    }
-
-    .institution h1 {
-        color: aqua;
-    }
-
-    .institution li {
-        color: white;
-        padding: 10px;
-        margin-left: 13px;
-
-    }
-.more{
+/* hero section css over */
+.cheif-name {
     overflow: hidden;
+}
+.cheif-name .col {
+    padding: 33px;
+    background: #002021;
+    border-radius: 12px;
+    margin: 8px;
+}
+.cheif-name span {
+    font-size: 14px;
+    color: aqua;
+}
+.cheif-name h2 {
+    color: aqua;
+}
+
+.cheif-name h1 {
+    color: white;
+    font-size: 20px;
+
+}
+
+.cheif-name p {
+    color: antiquewhite;
+}
+
+.cheif-name h4:hover {
+    color: red;
+}
+
+/* cheif section css over */
+.objective {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+
+
+.objective h1 {
+    color: crimson;
+    font-weight: bold;
+    text-decoration: underline white;
+}
+
+.objective h3 {
+    color: beige;
+    text-align: justify;
+    margin-top: 33px;
+
+
+}
+
+.objective h3:hover {
+    color: burlywood;
+}
+
+/* objective section css over */
+.structure-det {
+    overflow: hidden;
+    margin-top: 40px;
+}
+.structure-det .col {
+    background: #002021;
+    border-radius: 12px;
+    margin: 8px;
+    color: white;
+    
+}
+.structure-det .row {
+    float: left;
+    max-width: 1100px;
+}
+
+.structure-det h1 {
+    color: burlywood;
+}
+
+.structure-det p {
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 32px;
+    text-align: justify;
+
+}
+
+.structure-det p:hover {
+    color: cyan;
+
+}
+
+.structure-det h3 {
+    color: aliceblue;
+}
+
+.structure-det span {
+    color: red;
+    font-size: 24px;
+}
+
+.structure-det label {
+    color: red;
+    font-size: 45px;
+}
+
+.structure-det a {
+    border: 1px solid black;
+    padding: 13px;
+    background: crimson;
+    text-decoration: underline red;
+    color: azure;
+}
+
+.registered h1:hover {
+    color: aqua;
+}
+
+.registered a:hover {
+    color: aqua;
+}
+
+/* structure  section css over */
+.coordinators {
+    overflow: hidden;
+    margin-top: 40px;
+}
+.coordinators-div {
+    background  : #002021;
+    padding: 7px;
+    border-radius: 12px;
+}
+.coordinators h1 {
+    color: aqua;
+    font-size: 34px;
+
+}
+
+.coordinators h3 {
+    color: aliceblue;
+}
+
+.coordinators h3:hover {
+    color: red;
+}
+
+.coordinators p {
+    color: burlywood;
+}
+
+.coordinators-ul {
+    font-size: 23px;
+}
+
+.coordinators-ul a {
+    font-size: 19px;
+    text-decoration: underline white;
+
+}
+
+/* department section over */
+.department {
+    overflow: hidden;
+    margin-top: 40px;
+}
+.department .col {
+    margin: 46px;
+    background  : #002021;
+    border-radius: 12px;
+}
+
+.department h1 {
+    color: aliceblue;
+}
+
+.department h1:hover {
+    text-decoration: none;
+}
+
+.department h3 {
+    color: cyan;
+}
+
+.department p {
+    color: beige;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.department p:hover {
+    color: white;
+
+}
+
+.department li {
+    color: beige;
+}
+
+/* .department css over */
+.institution {
+    overflow: hidden;
+    margin-top: 4 underline white;
+}
+
+
+.institution h1 {
+    color: aqua;
+}
+
+.institution li {
+    color: white;
+    padding: 10px;
+    margin-left: 13px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.institution li:hover {
+    color: beige;
+}
+
+.more {
+    overflow: hidden;
+    margin-top: 80px;
 }
 
 .more h1 {
@@ -396,19 +371,98 @@ body {
     color: black;
     font-size: 30px;
 }
+
 .more a {
     font-size: 20px;
     margin: 10px;
 }
 
+/* institution section css over */
 
+.social h2 {
+    text-align: center;
+    color: bisque;
+    font-size: 20px;
+}
+.social li {
+    display: inline-block;
+    list-style: none;
+    font-size: 22px;
+    margin: 0px 10px;
+}
 
+.social-mes h2 {
+    text-align: center;
+    color: bisque;
+    font-size: 10px;
+} 
+.social-mes li {
+    display: inline-block;
+    list-style: none;
+    font-size: 10px;
+    margin: 0px 5px;
+}
 /* media quries */
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:490px) {
-        .cheif-name h4 {
-            font-size: 18px;
-            font-weight: bold;
-        }
+@media screen and (max-width:768px) {
+    .cheif-name-col {
+        margin-top: 0rem !important;
     }
+    .structure-det a {
+        position: relative;
+        left: 144px;
+    }
+    .coordinators-div {
+        background: #011c1d;
+        padding: 8px;
+    }
+    .coordinators h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .hero-section h4 {
+        font-size: 26px;
+    }
+    .cheif-name h1 {
+        font-size: 23px;
+        display: grid;
+    }
+    .cheif-name .col  {
+        box-shadow: 0px 0px 5px blue, 0px 0px 54px darkblue;
+    }
+    
+    .cheif-name-col {
+        margin-top: 0rem !important;
+    }
+    
+    .structure-det h1 {
+        font-size: 31px;
+    }
+    .structure-det .col {
+        box-shadow: 0px 0px 5px blue, 0px 0px 54px darkblue;
+    }
+    .structure-det a  {
+        font-size: 13px;
+        padding: 12px;
+        position: relative;
+        left: 16px;
+    }
+    .coordinators-div {
+        box-shadow: 0px 0px 5px blue, 0px 0px 54px darkblue;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .coordinators h1 {
+        font-size: 28px;
+    }
+    .department .col {
+        box-shadow: 0px 0px 5px blue, 0px 0px 54px darkblue;
+        margin: 24px;
+    }
+    .institution li {
+        box-shadow: 0px 0px 5px blue, 0px 0px 54px darkblue;
+        list-style: none;
+    }
+    
+}
